@@ -98,8 +98,8 @@ h2{font-size:28px;margin-bottom:8px}
 .work{display:grid;gap:22px}
 .piece{display:grid;grid-template-columns:1fr 300px;gap:26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface)}
 .piece .body{padding:24px 26px}
-.piece figure{margin:0;background:var(--surface-2);border-left:1px solid var(--line);display:flex;align-items:center;justify-content:center;min-height:200px}
-.piece figure img{width:100%;height:100%;object-fit:cover}
+.piece figure{margin:0;background:var(--surface-2);border-left:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:14px}
+.piece figure img{width:100%;height:auto;object-fit:contain}
 .piece .tag{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin:0 0 8px}
 .piece h3{font-size:22px;margin-bottom:10px}
 .piece p{margin:0 0 10px;color:var(--ink-2);font-size:15.5px}
@@ -107,7 +107,7 @@ h2{font-size:28px;margin-bottom:8px}
 .piece li{margin:3px 0}
 .piece .status{font-size:13.5px;color:var(--ink-3);margin-top:6px}
 .piece .btn{margin-top:10px}
-@media (max-width:700px){.piece{grid-template-columns:1fr}.piece figure{border-left:0;border-top:1px solid var(--line);min-height:0;max-height:220px}}
+@media (max-width:700px){.piece{grid-template-columns:1fr}.piece figure{border-left:0;border-top:1px solid var(--line)}}
 
 
 .skills p{color:var(--ink-2);font-size:15.5px;margin:0 0 8px}
@@ -159,7 +159,7 @@ footer{padding:28px 0 60px;color:var(--ink-3);font-size:14px}
   <h2>Why Baseball, Player Development, Analytics, and Mental Performance Matter to Me</h2>
   <div class="why">
     <div>
-      <p>Some of my earliest meaningful baseball memories are going to Braves games at Turner Field with my dad. We were big Mets fans, but we lived in Knoxville, so Atlanta was the closest stadium to us. I loved going to the playground there, eating the famous hamburgers, and buying baseball cards from the Braves store with our Braves Bucks. I once dropped my hamburger on the ground, and my dad picked it up and ate it. Before one game, I got to go onto the field with the grounds crew and put in third base. I also watched my dad run onto the field with the Braves grounds crew, even though he was a Mets fan. I thought it was so cool because we got to go into the area where they stayed during games and see everything behind the scenes.</p>
+      <p>Some of my earliest meaningful baseball memories are going to Braves games at Turner Field with my dad. We were big Mets fans, but we lived in Knoxville, so Atlanta was the closest stadium to us. I loved going to the playground there, eating the famous hamburgers, and buying baseball cards from the Braves store with our Braves Bucks. Before one game, I got to go onto the field with the grounds crew and put in third base. I also watched my dad run onto the field with the Braves grounds crew, even though he was a Mets fan. I thought it was so cool because we got to go into the area where they stayed during games and see everything behind the scenes.</p>
       <p>I loved listening to my dad talk about all the great players. I was obsessed with David Wright, Miguel Cabrera, Jacob deGrom, R.A. Dickey, Ted Williams, and basically everyone from the <em>Baseball Card Adventures</em> books by Dan Gutman. My dad had tons of baseball memorabilia in his office, and as a kid, I loved looking at it and thinking about its connections to the greats of baseball. On the drives home from Braves games to Knoxville, I would read the backs of baseball cards and tell my dad all about each player. I was obsessed with collecting and organizing my cards and looking through my dad’s old ones.</p>
       <p>When I picture those childhood experiences, I remember feeling so happy and having a sense of belonging. I just loved being at baseball games because they were so fascinating to me. Baseball also connects me to my dad and to his father, whom I never met. My dad used to go to games with his father, just as I went to games with him. Knowing that we share those memories through baseball makes the game feel like part of my family.</p>
       <p>I fell in love with baseball all over again in 2019, when I was fourteen. My dad told me about a Mets rookie named Pete Alonso who was supposed to be incredible, and I became fascinated with following the beginning of his major-league career and seeing how his performance and development continued. My favorite part of baseball is still seeing rookies make their MLB debuts. I love watching the beginning of a player’s career and seeing where his hard work takes him.</p>
@@ -321,7 +321,7 @@ footer{padding:28px 0 60px;color:var(--ink-3);font-size:14px}
       <div class="body">
         <p class="tag">Research · in progress</p>
         <h3>What tracking data can, and cannot, say about mental performance</h3>
-        <p>I wanted to study how pitchers respond to pressure and fatigue. The first thing I learned was that Trackman can measure what a delivery does, but it can't tell you what a player is thinking. On a small Columbia sample, release-point consistency looked almost perfectly reliable, and when I ran the same thing on about 1,900 Division I pitchers it fell to about 0.50. That was when the method had to change, and the version I'm working on now only measures whether a pitcher can repeat his release within a single outing. I've also been honest about the ideas that didn't hold up, especially anything that would rank players on something like composure.</p>
+        <p>I wanted to see whether there was anything in the Trackman data that would show exactly when and where a pitcher started struggling, and then pair that with surveys and what we already know about a player's mental adversities or anxieties to see if there were connections there. On a small Columbia sample, release-point consistency looked almost perfectly reliable, and when I ran the same thing on about 1,900 Division I pitchers it fell to about 0.50, which is when the method had to change. The version I'm working on now measures whether a pitcher can repeat his release within a single outing, and I've been honest about the ideas that didn't hold up, especially anything that would try to rank players on something like composure from the data alone.</p>
       </div>
       <figure><img src="img/mp_reliability.png" alt="Two reliability curves across minimum-outing thresholds; the revised within-outing release measure is higher at every sample depth" loading="lazy"></figure>
     </article>
