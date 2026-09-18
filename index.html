@@ -89,6 +89,7 @@ h1{font-size:clamp(38px,6.2vw,60px);margin:14px 0 0}
 section{border-top:2px solid var(--ink);padding:36px 0 44px}
 .shead{display:grid;grid-template-columns:var(--rail) 1fr;gap:28px;margin:0 0 26px}
 .shead h2{font-size:30px}
+.shead .lede{margin:12px 0 0;color:var(--ink-2);font-size:16px;max-width:64ch}
 .body-grid{display:grid;grid-template-columns:var(--rail) 1fr;gap:28px}
 @media (max-width:760px){
   .shead,.body-grid{grid-template-columns:1fr;gap:10px}
@@ -305,7 +306,6 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
       <ul>
         <li>Write advance-scouting reports on opposing teams and pitchers for series preparation and in-game strategy.</li>
         <li>Write player-development reports tracking each pitcher's progress across the season, and review video in TruMedia to connect the numbers to what the delivery actually looks like.</li>
-        <li>Built a fielding evaluation model for the program and per-hitter diagnostic reports that turn Trackman data into strengths and work-ons.</li>
         <li>Support recruiting by compiling and evaluating high-school prospects against program needs.</li>
       </ul>
       <h4>Leading SABRLions</h4>
@@ -376,7 +376,10 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
 <section id="work">
   <div class="shead">
     <p class="eyebrow">Work</p>
-    <h2>Research and tools I have built</h2>
+    <div>
+      <h2>Research and tools I have built</h2>
+      <p class="lede">Everything here I built on my own time, mostly to learn and partly because I hoped it could help Columbia Baseball. I frame the question, decide what would count as evidence, and interpret the result, and I use AI help in VS Code to move faster on the code.</p>
+    </div>
   </div>
 
   <article class="entry">
