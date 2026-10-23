@@ -9,7 +9,6 @@
 <meta property="og:title" content="Emma-Caroline Avery">
 <meta property="og:description" content="Player development, analytics, and mental performance.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://emmacarolinea.github.io/img/pressbox.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -30,14 +29,14 @@
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18.5px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:var(--blue-600);text-decoration:none}
 a:hover{text-decoration:underline;text-underline-offset:2px}
 :focus-visible{outline:2px solid var(--blue-600);outline-offset:3px}
 img{max-width:100%;display:block;height:auto}
 h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.15;letter-spacing:-.01em;margin:0;text-wrap:balance}
 p{margin:0 0 14px}
-.wrap{max-width:960px;margin:0 auto;padding:0 28px}
+.wrap{max-width:900px;margin:0 auto;padding:0 28px}
 @media (max-width:520px){.wrap{padding:0 18px}}
 
 .eyebrow{font-family:var(--mono);font-size:12.5px;font-weight:500;line-height:1.4;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin:0}
@@ -45,7 +44,7 @@ p{margin:0 0 14px}
 
 /* masthead */
 nav.top{position:sticky;top:0;z-index:20;background:rgba(251,249,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-nav.top .row{max-width:960px;margin:0 auto;padding:0 28px;min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+nav.top .row{max-width:900px;margin:0 auto;padding:0 28px;min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:10px;color:var(--ink);font-family:var(--display);font-weight:700;font-size:17px;white-space:nowrap}
 .brand:hover{text-decoration:none}
 .brand .mark{width:26px;height:26px;border-radius:6px;background:var(--blue-600);color:var(--paper);font-family:var(--display);font-size:13px;font-weight:700;line-height:26px;text-align:center;flex:none}
@@ -74,26 +73,19 @@ h1{font-size:clamp(40px,6.4vw,64px);margin:14px 0 0}
 /* ruled sections: label in the left rail, content in the measure */
 section{border-top:2px solid var(--ink);padding:38px 0 48px}
 .shead{display:grid;grid-template-columns:var(--rail) 1fr;gap:28px;margin:0 0 28px}
-.shead h2{font-size:31px}
+.shead h2{font-size:34px}
 .shead .sub{margin:12px 0 0;color:var(--ink-2);font-size:16.5px;max-width:62ch}
 .body-grid{display:grid;grid-template-columns:var(--rail) 1fr;gap:28px}
 @media (max-width:760px){.shead,.body-grid{grid-template-columns:1fr;gap:10px}.shead{margin-bottom:20px}}
-
-/* beliefs: numbered, ruled, no boxes */
-.beliefs{margin:0;padding:0;list-style:none;counter-reset:b}
-.beliefs li{counter-increment:b;display:grid;grid-template-columns:44px 1fr;gap:16px;padding:22px 0;border-top:1px solid var(--line)}
-.beliefs li:first-child{border-top:0;padding-top:0}
-.beliefs li::before{content:counter(b,decimal-leading-zero);font-family:var(--mono);font-size:13px;color:var(--blue-600);padding-top:9px}
-.beliefs h3{font-size:23px;margin:0 0 8px}
-.beliefs p{margin:0;color:var(--ink-2);max-width:62ch}
-.beliefs .from{display:block;margin-top:8px;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--ink-3)}
 
 /* work and research entries */
 .entry{display:grid;grid-template-columns:var(--rail) 1fr;gap:28px;padding:34px 0;border-top:1px solid var(--line)}
 .entry:first-of-type{border-top:0;padding-top:0}
 .entry .kind{font-family:var(--mono);font-size:11.5px;line-height:1.7;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
-.entry h3{font-size:24px;margin:0 0 12px}
-.entry p{color:var(--ink-2);max-width:64ch}
+.entry h3{font-size:26px;margin:0 0 12px}
+.entry p{color:var(--ink-2);max-width:62ch}
+.entry ul.plain{margin:0;padding-left:18px;color:var(--ink-2);max-width:62ch}
+.entry ul.plain li{margin:6px 0}
 .entry figure{margin:20px 0 0;background:var(--surface-2);border:1px solid var(--line);border-radius:2px;padding:14px}
 .entry figure img{width:100%}
 .entry figure.photo{padding:0;border:0;background:none}
@@ -132,7 +124,7 @@ section{border-top:2px solid var(--ink);padding:38px 0 48px}
 .ruled:hover{text-decoration:none}
 .ruled:hover h3{color:var(--blue-600)}
 .ruled h3{font-size:19px;margin:8px 0 6px}
-.ruled p{margin:0;color:var(--ink-2);font-size:15.5px;max-width:64ch}
+.ruled p{margin:0;color:var(--ink-2);font-size:16.5px;max-width:64ch}
 h4{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--blue-600);margin:28px 0 6px}
 
 /* experience */
@@ -140,14 +132,14 @@ h4{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.14em
 .job:first-of-type{border-top:0;padding-top:0}
 .job .when{font-family:var(--mono);font-size:12px;line-height:1.7;color:var(--ink-3);font-variant-numeric:tabular-nums}
 .job .when span{display:block;opacity:.8}
-.job h3{font-size:23px}
+.job h3{font-size:25px}
 .job .role{color:var(--ink-2);font-size:15.5px;margin:5px 0 0}
 .titles{margin:14px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
 .titles li{display:grid;grid-template-columns:1fr auto;gap:6px 18px;align-items:baseline;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}
 .titles b{font-weight:600}
 .titles em{font-style:normal;color:var(--ink-2)}
 .titles time{font-family:var(--mono);font-size:11.5px;color:var(--ink-3);white-space:nowrap}
-.job ul:not(.titles){margin:8px 0 0;padding-left:17px;color:var(--ink-2);font-size:15.5px}
+.job ul:not(.titles){margin:8px 0 0;padding-left:17px;color:var(--ink-2);font-size:16.5px}
 .job ul:not(.titles) li{margin:6px 0;max-width:62ch}
 @media (max-width:760px){.job{grid-template-columns:1fr;gap:10px}.job .when span{display:inline}}
 
@@ -178,7 +170,6 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
 <nav class="top"><div class="row">
   <a class="brand" href="#top"><span class="mark" aria-hidden="true">e</span>Emma-Caroline Avery</a>
   <div class="links">
-    <a href="#beliefs">Beliefs</a>
     <a href="#work">Work</a>
     <a href="#research">Research</a>
     <a href="#experience">Experience</a>
@@ -193,7 +184,7 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
   <div>
     <p class="eyebrow">Player development · Analytics · Mental performance</p>
     <h1>Emma-Caroline Avery</h1>
-    <p class="lede">Analytics lets me understand the performance, and the relationships let me understand the person performing. I want my work to connect both.</p>
+    <p class="lede">Analytics allows me to understand performance, while relationships allow me to understand the person performing. I want my work to connect both.</p>
     <div class="roles">
       <div><span><b>Director of Analytics</b> <em>· Columbia Baseball coaching staff</em></span><time>Sep 2026</time></div>
       <div><span><b>Director of SABRLions</b> <em>· Columbia's student analytics group</em></span><time>Aug 2026</time></div>
@@ -211,56 +202,6 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
   <figure class="portrait"><img src="dodgers-sign.jpg" alt="Emma-Caroline Avery in front of the Dodgers sign at Camelback Ranch" width="900" height="1200"></figure>
 </header>
 
-<section id="beliefs">
-  <div class="shead">
-    <p class="eyebrow">Beliefs</p>
-    <div>
-      <h2>What I keep coming back to</h2>
-      <p class="sub">A few things I believe about players and data, mostly learned the slow way at the field. Each one comes from something I wrote or built, so you can go check it.</p>
-    </div>
-  </div>
-  <div class="body-grid">
-    <div></div>
-    <ol class="beliefs">
-      <li>
-        <div>
-          <h3>Players are people first and baseball players second.</h3>
-          <p>Two players can get the exact same information and respond to it completely differently, because they have different experiences, goals, and ways of understanding the game. The work is learning who someone is, then figuring out how to say the thing so he can actually use it.</p>
-          <span class="from">From my story, below</span>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h3>Compare a player to himself and to his own goals.</h3>
-          <p>Rankings tell you where someone sits, but they don't tell you whether he is getting closer to the thing he is actually working on. I would rather know what a player's goals are and measure against those, especially when the results haven't caught up yet.</p>
-          <span class="from">How I write the weekly development reports at Columbia</span>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h3>Judge a player on a number that hasn't stabilized and you're reading the sample, not the player.</h3>
-          <p>A college player gets a few months, which is way less time than a pro and with more at stake, so it really matters which numbers you lean on early. Whiff rate is trustworthy after about 59 plate appearances. OPS still isn't after a full season.</p>
-          <span class="from">Stabilization thread, Paradigm, Sep 2026</span>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h3>Luck runs out. Skill is repeatable and trainable.</h3>
-          <p>OPS tells you who produced, but it can't tell a blooper that fell in from a line drive hit right at the shortstop. Before you change anything about a hitter, check whether the problem shows up in past seasons and in BP, because if it does, it's real and you can train it.</p>
-          <span class="from">Luck or Skill thread, Paradigm, Oct 2026</span>
-        </div>
-      </li>
-      <li>
-        <div>
-          <h3>A lot of what holds people back is that they just don't know how yet.</h3>
-          <p>Most of what I've built started because somebody, often me, didn't have a way to learn something before it counted. New taggers didn't have a place to practice, so I made one. Our pitchers couldn't easily find their own bullpen video, so I built the pipeline that gets it to them.</p>
-          <span class="from">Why the trainers, the onboarding guide, and the video pipeline exist</span>
-        </div>
-      </li>
-    </ol>
-  </div>
-</section>
-
 <section id="work">
   <div class="shead">
     <p class="eyebrow">Work</p>
@@ -273,11 +214,10 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
   <article class="entry">
     <p class="kind">Pipeline<br>In use</p>
     <div>
-      <h3>Every bullpen, on video, with the pitch data next to it</h3>
-      <p>I noticed that our pitchers didn't really have an easy way to watch their own bullpens. The clips sat inside Trackman's system without labels, and there was no link between a clip and the pitch it showed. So I built a job that pulls every Columbia bullpen clip through the Trackman API and pairs each one with that pitch's velocity, spin, movement, release, and location. It also renders a card beside the video, so a pitcher can see how that pitch compared with his own average for the pitch type.</p>
-      <p>The clips land in a shared Drive folder organized by pitcher, season, date, and pitch type, and every pitcher gets an email with a link when his new video is up. The whole team has access to it, and honestly the best part has been hearing that the pitchers actually use it.</p>
+      <h3>Bullpen video pipeline</h3>
+      <p>Pulls every Columbia bullpen clip from Trackman through its API, pairs each clip with that pitch's data (velocity, spin, movement, release, location, and how it compares with the pitcher's average), and renders a card next to the video.</p>
+      <p>Clips go to a shared Google Drive folder organized by pitcher, season, date, and pitch type. Pitchers get an email when new video is up. The whole team has access.</p>
       <p class="scope">12,419 bullpen clips · 25 pitchers · 149 sessions, Sep 2024 to Oct 2026 · Trackman API, Python, rclone, Google Apps Script</p>
-      <figure class="photo"><img src="img/pressbox.jpg" alt="A laptop running Trackman on the press box ledge above Robertson Field, with a sticky note on the railing" width="1200" height="1600" loading="lazy" style="max-width:520px"><figcaption>Robertson Field from the press box, where most of this starts.</figcaption></figure>
     </div>
   </article>
 
@@ -297,16 +237,22 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
       <h3>Trackman Tagging Trainer</h3>
       <p>When I started training new SABRLions on Trackman, I realized there really wasn't a low-stakes place to practice tagging before a live game, so I built one. The trainer walks through the whole sequence of reading the play, picking the pitch type, recording the result, and moving the runners. You can mess up and undo it without any real data at risk. It's how our new taggers get their first reps now, and honestly I wish I'd had it my freshman year.</p>
       <a class="btn" href="demos/trackman_trainer.html">Open the trainer</a>
-      <figure class="photo"><img src="img/teaching.jpg" alt="Emma-Caroline teaching a Trackman session in a Columbia classroom, standing at the chalkboard with a laptop" width="1600" height="1200" loading="lazy"><figcaption>Teaching the Trackman onboarding session for new SABRLions.</figcaption></figure>
+      <figure><img src="img/trainer_overview.png" alt="Screenshot of the Trackman tagging trainer interface" width="1200" height="723" loading="lazy"></figure>
     </div>
   </article>
 
   <article class="entry">
     <p class="kind">For the staff<br>Weekly</p>
     <div>
-      <h3>The reports our pitching coach gets every week</h3>
-      <p>Every week this fall I put together a one-page in-zone leaderboard for the pitching staff and a Monday development report for our pitching coach. The report tracks each pitcher against his own goals, with benchmarks from Division I, and after our scrimmages I write up each pitcher's outing. I also built a one-page D1 pitch-characteristics sheet so the staff can see how our arms compare with the rest of the country. Last spring I suggested using one of our pitchers as an opener after looking at inning-by-inning performance, and the coaches agreed it was a great idea.</p>
-      <p>I'm also helping build the SABRLions team website, with a profile for every player that holds his game and bullpen data, his bullpen video, and the weekly leaderboard. I really want players to be able to find their own information without having to ask for it, and we're working with Columbia's systems team to launch it.</p>
+      <h3>Columbia pitching staff reports</h3>
+      <ul class="plain">
+        <li>Weekly in-zone (IZ%) leaderboard for the pitching staff, one page.</li>
+        <li>Monday development report for the pitching coach: each pitcher against his own goals, with D1 benchmarks.</li>
+        <li>One-page 2025–26 D1 pitch-characteristics reference sheet for the staff.</li>
+        <li>Outing write-ups for each pitcher after fall scrimmages.</li>
+        <li>Spring 2026: suggested using one of our pitchers as an opener based on inning-by-inning performance. The coaches agreed.</li>
+        <li>SABRLions team website (in progress, with Columbia's systems team): a profile for every player with game and bullpen data, bullpen video, and the weekly leaderboard.</li>
+      </ul>
     </div>
   </article>
 </section>
@@ -316,24 +262,23 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
     <p class="eyebrow">Research</p>
     <div>
       <h2>Questions I've worked on</h2>
-      <p class="sub">Every number here ships with its sample, and most of it runs on Division I Trackman data. The threads were published through Paradigm, where I research and write them.</p>
+      <p class="sub">Division I Trackman data. The threads were published through Paradigm, where I research and write them.</p>
     </div>
   </div>
   <div class="body-grid">
     <div></div>
     <div>
-      <!-- When the Luck or Skill thread is live, replace the href with the status URL. -->
-      <a class="feature" href="https://x.com/ParadigmPDS" rel="noopener">
-        <p class="eyebrow">X · Paradigm Player Development · October 2026 · my thread</p>
-        <h3>Luck or skill? Your best hitter by OPS might just be getting lucky.</h3>
-        <p>OPS tells you who produced, but not how or why, and some hitters are producing above what their batted balls say they should. I looked at every Division I team offense over four seasons to see what actually separates the good ones from the bad ones, and it was contact quality, not swing decisions and not swing-and-miss.</p>
+      <a class="feature" href="https://x.com/ParadigmPDS/status/2110815304188112908" rel="noopener">
+        <p class="eyebrow">X · Paradigm Player Development · Oct 20, 2026 · my thread</p>
+        <h3>Your best hitter by OPS might just be getting lucky.</h3>
+        <p>OPS tells you who produced. It can't tell you who will keep producing. We studied D1 offenses from 2023–26 and found the stat that predicts success as well as OPS does, and becomes reliable 5x faster.</p>
         <div class="big">
-          <div>70%<span>of the worst D1 offenses are bottom-third in contact quality</span></div>
-          <div>7%<span>of the best offenses are</span></div>
-          <div>5x<span>faster: hard-hit% is reliable at about 61 PA, OPS at about 340</span></div>
+          <div>70%<span>of D1's worst offenses rank in the bottom third in contact quality</span></div>
+          <div>7%<span>of the best offenses do</span></div>
+          <div>61 PA<span>until hard-hit% is reliable, vs. about 340 for OPS</span></div>
         </div>
-        <p>Bad and good offenses miss fastballs under 87 mph at the same rate, and the gap only opens as the velocity climbs. So the plan is weak contact gets bat speed and attack angle work, missing hard fastballs gets velocity training, and before you change anything you check it against past seasons and BP.</p>
-        <p class="scope">941 D1 team offenses, 2023–26, 600+ tracked PA each · 1.6M PA · every number holds at 300, 600, 1,000 and 1,500 PA minimums and within conference</p>
+        <p>Against fastballs under 87, bad and good offenses whiff at the same rate. The harder the fastball, the bigger the gap.</p>
+        <p class="scope">941 D1 team offenses, 2023–26, 600+ tracked PA each · Trackman · every number holds at 300, 600, 1,000 and 1,500 PA minimums and within conference</p>
         <span class="go">Read the thread</span>
       </a>
 
