@@ -206,8 +206,8 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
   <div class="shead">
     <p class="eyebrow">Work</p>
     <div>
-      <h2>Things I noticed and built</h2>
-      <p class="sub">Independent projects and tools I designed for Columbia Baseball. For each one I came up with the idea, decided what it should show, tested it, and explained it to the people using it, and the code was written with AI coding tools.</p>
+      <h2>Things I've built</h2>
+      <p class="sub">Independent projects and tools for Columbia Baseball. The idea, design, workflow and data cleaning were mine, and the code was written with AI coding tools.</p>
     </div>
   </div>
 
@@ -225,7 +225,7 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
     <p class="kind">Training tool<br>Browser</p>
     <div>
       <h3>Pitch-Recognition Trainer</h3>
-      <p>My freshman year I tagged pitches off a sticky note with four rules on it. I didn't really understand how velocity, spin, and movement fit together until a lot later. This game shows you those numbers from real Columbia pitches and asks you to call the pitch type, and it tells you right away whether you were right. The goal isn't to memorize one pitcher's arsenal, it's to build the mental model I didn't have when I started.</p>
+      <p>My freshman year I tagged pitches off a sticky note with four rules on it, and I didn't fully get pitch tags until junior year. This game shows you the velocity, spin, and movement of real Columbia pitches, asks you to call the pitch type, and tells you right away if you got it right. If you get too many wrong in a row your score resets, so it rewards accuracy over random guessing.</p>
       <a class="btn" href="demos/pitch_recognition_game.html">Play it</a>
       <figure><img src="img/reco_game.png" alt="Screenshot of the pitch-recognition trainer game" width="1200" height="830" loading="lazy"></figure>
     </div>
@@ -235,7 +235,7 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
     <p class="kind">Training tool<br>Browser</p>
     <div>
       <h3>Trackman Tagging Trainer</h3>
-      <p>When I started training new SABRLions on Trackman, I realized there really wasn't a low-stakes place to practice tagging before a live game, so I designed one. The trainer walks through the whole sequence of reading the play, picking the pitch type, recording the result, and moving the runners. You can mess up and undo it without any real data at risk. It's how our new taggers get their first reps now, and honestly I wish I'd had it my freshman year.</p>
+      <p>We only really get about five weeks of scrimmages in the fall, and in the spring we're indoors on the portable Trackman, so new taggers were learning in live games where it goes so fast they get behind. I wanted a way for people to practice without the added stress of tagging in a game or scrimmage. The trainer walks through reading the play, picking the pitch type, recording the result, and moving the runners, with the same keyboard shortcuts as the real Trackman. It's how our new taggers get their first reps now, and I wish I'd had something like it when I was first learning.</p>
       <a class="btn" href="demos/trackman_trainer.html">Open the trainer</a>
       <figure><img src="img/trainer_overview.png" alt="Screenshot of the Trackman tagging trainer interface" width="1200" height="723" loading="lazy"></figure>
     </div>
@@ -249,7 +249,7 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
         <li>Weekly in-zone (IZ%) leaderboard for the pitching staff, one page.</li>
         <li>One-page 2025–26 D1 pitch-characteristics reference sheet for the staff.</li>
         <li>Outing write-ups for each pitcher after fall scrimmages.</li>
-        <li>Spring 2026: suggested using one of our pitchers as an opener based on inning-by-inning performance. The coaches agreed.</li>
+        <li>Spring 2026: suggested using one of our pitchers as an opener based on inning-by-inning performance. The coaches took my suggestion.</li>
         <li>SABRLions team website (in progress, with Columbia's systems team): a profile for every player with game and bullpen data, bullpen video, and the weekly leaderboard.</li>
       </ul>
     </div>
@@ -261,7 +261,7 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
     <p class="eyebrow">Research</p>
     <div>
       <h2>Questions I've worked on</h2>
-      <p class="sub">Division I Trackman data. The threads were published through Paradigm, where I research and write them.</p>
+      <p class="sub">Most of this uses Division I Trackman data. The threads were published by Paradigm Player Development.</p>
     </div>
   </div>
   <div class="body-grid">
@@ -269,8 +269,8 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
     <div>
       <a class="feature" href="https://x.com/ParadigmPDS/status/2110815304188112908" rel="noopener">
         <p class="eyebrow">X · Paradigm Player Development · Oct 20, 2026 · my thread</p>
-        <h3>Your best hitter by OPS might just be getting lucky.</h3>
-        <p>OPS tells you who produced. It can't tell you who will keep producing. We studied D1 offenses from 2023–26 and found the stat that predicts success as well as OPS does, and becomes reliable 5x faster.</p>
+        <h3>Luck or skill in D1 offenses</h3>
+        <p>OPS tells you who is producing the most on a team but not how or why. Some hitters could be producing above their expected OPS and just getting lucky, so you need to see if it's luck or skill. This thread looks at what separates good and bad D1 offenses in contact quality.</p>
         <div class="big">
           <div>70%<span>of D1's worst offenses rank in the bottom third in contact quality</span></div>
           <div>7%<span>of the best offenses do</span></div>
@@ -285,7 +285,7 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
         <p class="kind">Research<br>Published</p>
         <div>
           <h3>When can you trust a college stat?</h3>
-          <p>Everyone says it's early in the season, but early could mean wait another weekend or wait until May, and I wanted to know which one. So I ran split-half reliability on the most common hitting and pitching stats, splitting each player's season in half at random and testing whether the same differences between players showed up in both halves. Whiff rate becomes dependable at about 59 plate appearances, and OPS still hasn't gotten there after a full season, since a typical D1 starter sees about 232. On the pitching side, velocity and movement are known after two fastballs, and runs allowed never reaches the threshold at all.</p>
+          <p>I was curious when a stat stabilizes, which is when it becomes mostly skill instead of noise or luck, because in player development a player's stats sometimes aren't truly representative of who he is. College players have only a few months to prove themselves, so it matters a lot which numbers you can trust. I ran split-half reliability on the most common hitting and pitching stats, splitting each player's season in half at random and testing whether the same differences between players showed up in both halves. Whiff rate becomes dependable at about 59 plate appearances, and OPS still hasn't gotten there after a full season, since a typical D1 starter sees about 232. On the pitching side, velocity and movement are known after two fastballs, and runs allowed never reaches the threshold at all.</p>
           <div class="chart" role="img" aria-label="Plate appearances needed before a stat is reliable at 0.70: whiff 59, hard-hit 61, chase 75, in-zone swing 84, OPS about 340. A typical D1 regular gets 232 in a season.">
             <svg viewBox="0 0 690 230" xmlns="http://www.w3.org/2000/svg">
               <g transform="translate(130,16)">
@@ -314,17 +314,17 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
         <p class="kind">Research<br>In progress</p>
         <div>
           <h3>Arm slot in college baseball</h3>
-          <p>After reading a 2026 study that found sidearm pitchers in MLB carried less shoulder and elbow injury burden, I wanted to know whether any of that shows up in college. I'm using Division I Trackman data from 2022 through 2026 to estimate each pitcher's arm slot from where he releases the ball. The estimate is really stable, with the same pitcher landing in the same place from one half of a season to the next and mostly from one year to the next. Fewer than one in a hundred pitcher-seasons is a true submariner, and they sit in their own cluster on the plot. Across normal slots I haven't found a gradient in availability at all, while the submariners get used very differently, so the story so far is about the extreme tail and not a smooth slope. I won't call any gap in a pitcher's calendar an injury unless something outside the data confirms it.</p>
+          <p>After reading a 2026 study that found sidearm pitchers in MLB carried less shoulder and elbow injury burden, I wanted to know whether any of that shows up in college. I'm using Division I Trackman data from 2022 through 2026 to estimate each pitcher's arm slot from where he releases the ball. The estimate is really stable, with the same pitcher landing in the same place from one half of a season to the next and mostly from one year to the next. Fewer than one in a hundred pitcher-seasons is a true submariner, and they sit in their own cluster on the plot. So far I haven't found any difference in availability across normal arm slots, but the submariners get used very differently from everyone else.</p>
           <figure><img src="img/arm_slot_release.png" alt="Scatter of median release height against release side for every D1 pitcher-season, with flagged submariners forming a separate cluster at low release height" width="1740" height="1320" loading="lazy"></figure>
-          <p class="scope">D1, 2022–2026 · 17,180 pitcher-seasons with 100+ pitches · release geometry is a proxy for arm slot, not a measured arm angle</p>
+          <p class="scope">D1, 2022–2026 · 17,180 pitcher-seasons with 100+ pitches · release geometry is a proxy for arm slot, not a measured arm angle · a gap in a pitcher's calendar is not counted as an injury</p>
         </div>
       </article>
 
       <article class="entry">
         <p class="kind">Research<br>In progress</p>
         <div>
-          <h3>What tracking data can, and cannot, say about mental performance</h3>
-          <p>I wanted to see whether there was anything in the Trackman data that would show exactly when and where a pitcher started struggling, and then pair that with surveys and what we already know about a player's mental adversities or anxieties to see if there were connections there. On a small Columbia sample, release-point consistency looked almost perfectly reliable, and when I ran the same thing on about 1,900 Division I pitchers it fell to about 0.50, which is when the method had to change. The version I'm working on now measures whether a pitcher can repeat his release within a single outing, and I've been honest about the ideas that didn't hold up, especially anything that would try to rank players on something like composure from the data alone.</p>
+          <h3>Mental performance and Trackman data</h3>
+          <p>I wanted to see whether there was anything in the Trackman data that would show exactly when and where a pitcher started struggling, and then pair that with surveys and what we already know about a player's mental adversities or anxieties to see if there were connections there. On a small Columbia sample, release-point consistency looked almost perfectly reliable, but when I ran the same thing on about 1,900 Division I pitchers it fell to about 0.50, so I changed the approach. Now I'm measuring whether a pitcher can repeat his release within a single outing.</p>
           <figure><img src="img/mp_reliability.png" alt="Two reliability curves across minimum-outing thresholds; the revised within-outing release measure is higher at every sample depth" width="1800" height="1080" loading="lazy"></figure>
           <p class="scope">NCAA D1 · single split-half at each outing threshold · 1,668 / 663 / 125 / 21 pitchers at 6 / 10 / 15 / 20 outings</p>
         </div>
@@ -334,7 +334,7 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
       <a class="ruled" href="https://x.com/ParadigmPDS/status/2107105796182176090" rel="noopener">
         <p class="eyebrow">Oct 5, 2026 · I wrote this one</p>
         <h3>Two hitters, the same bat speed, completely different swings</h3>
-        <p>Out of my Blast Motion work this fall. Rotational acceleration separates a swing the body turns from one the hands push, and because the barrel moves about three times faster than the hands, a small gap in hand speed becomes a big one at the barrel.</p>
+        <p>This came out of my Blast Motion work this fall. Rotational acceleration separates a swing the body turns from one the hands push, and because the barrel moves about three times faster than the hands, a small gap in hand speed becomes a big one at the barrel.</p>
       </a>
       <a class="ruled" href="https://x.com/ParadigmPDS/status/2103109948381290940" rel="noopener">
         <p class="eyebrow">Sep 24, 2026 · I researched this one</p>
@@ -360,7 +360,7 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
 <section id="experience">
   <div class="shead">
     <p class="eyebrow">Experience</p>
-    <h2>Where I have worked</h2>
+    <h2>Where I've worked</h2>
   </div>
 
   <div class="job">
@@ -374,8 +374,8 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
         <li><span><b>Student Manager</b> <em>· founding undergraduate member</em></span><time>Jan 2024 —</time></li>
       </ul>
       <ul>
-        <li>The program's point person for Trackman data, reporting, and player-development analytics. I operate the stadium unit and the portable bullpen unit with synchronized iPad video, set up the Edgertronic cameras, and clean, verify, and retag every session so the staff's reports are built on accurate pitch types.</li>
-        <li>Write the weekly development report and outing notes for the pitching coach, review video in TruMedia and game footage on AWRE, and translate what I find for coaches and players. Wrote advance-scouting reports on opponents in earlier seasons.</li>
+        <li>The program's point person for Trackman data, reporting, and player-development analytics. I operate the stadium unit and the portable bullpen unit with synchronized iPad video, troubleshoot the Edgertronic and AWRE cameras, and clean, verify, and retag every session so the staff's reports are built on accurate pitch types.</li>
+        <li>Make the weekly in-zone leaderboard and outing write-ups for the pitching staff, review video in TruMedia and game footage on AWRE, and explain what I find to coaches and players. Wrote advance-scouting reports on opponents in earlier seasons.</li>
         <li>Lead SABRLions: set priorities, run weekly meetings, recruit and onboard new members, assign Trackman shifts across practices, scrimmages, and games, and coordinate guest speakers from professional baseball. Trained every new operator and wrote the onboarding guide.</li>
       </ul>
     </div>
@@ -464,7 +464,7 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
       <div><dt>Education</dt><dd>Barnard College of Columbia University, B.A. in Psychology, expected May 2027.</dd></div>
       <div><dt>Certifications</dt><dd>Human Subjects Protection and Research with Minors (2024). Rapsodo Pitching Certification in progress.</dd></div>
       <div><dt>Technology</dt><dd>Trackman, KinaTrax, Rapsodo, HitTrax, Trajekt, Blast Motion, Edgertronic, AWRE, Sony video cameras, Synergy, TruMedia. Familiar with Hawkeye and BATS.</dd></div>
-      <div><dt>Analysis</dt><dd>Microsoft Office (Excel, Word), R, Python, SQL (developing); design data and video tools built with AI coding tools; Adobe Lightroom, Adobe Premiere Pro, Canva.</dd></div>
+      <div><dt>Analysis</dt><dd>Microsoft Office (Excel, Word), R, Python, SQL (developing); data and video tools built with AI coding tools; Adobe Lightroom, Adobe Premiere Pro, Canva.</dd></div>
       <div><dt>Languages</dt><dd>Spanish (intermediate), Italian (elementary).</dd></div>
     </dl>
   </div>
@@ -473,12 +473,12 @@ footer{border-top:1px solid var(--line);margin-top:8px;padding:26px 0 64px;font-
 <section class="contact" id="contact">
   <div class="shead">
     <p class="eyebrow">Contact</p>
-    <h2>Let's talk</h2>
+    <h2>Get in touch</h2>
   </div>
   <div class="body-grid">
     <div></div>
     <div>
-      <p>Always glad to talk player development, college analytics, mental performance, or Trackman.</p>
+      <p>Email is the best way to reach me: ecavery03@gmail.com</p>
       <div class="btns">
         <a class="primary" href="mailto:ecavery03@gmail.com">Email me</a>
         <a href="Emma-Caroline Avery - Resume.pdf">Résumé (PDF)</a>
